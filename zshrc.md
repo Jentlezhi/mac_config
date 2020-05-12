@@ -138,4 +138,6 @@ export PATH="/anaconda/bin:$PATH"
 
 source /Users/Jentle/issh/issh.sh
 
+setopt no_nomatch
+
 ```
