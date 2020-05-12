@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jenLineLabelLauout</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[self.&lt;#obj#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(CYTMarginH);
+            make.right.equalTo(-CYTMarginH);
+            make.bottom.equalTo(self);
+            make.height.equalTo(CYTDividerLineWH);
+        }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>39C81212-A8EB-430F-95CC-1CC54AF9CD97</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>lineLabelLayout</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jenShadow</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#obj#&gt;.layer.shadowColor = [[UIColor blackColor] colorWithAlphaComponent:0.8].CGColor;
+&lt;#obj#&gt;.layer.shadowOpacity = 0.08f;
+&lt;#obj#&gt;.layer.shadowRadius = 4;
+&lt;#obj#&gt;.layer.shadowOffset = CGSizeMake(0, 0.5);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>15553908-D55A-49A0-8229-BCC7336AE293</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>shadow</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

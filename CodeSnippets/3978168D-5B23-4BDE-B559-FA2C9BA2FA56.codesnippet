@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jenCollectionView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (CYTCollectionMainView *)&lt;#obj#&gt; {
+    
+    if (!_&lt;#obj#&gt;) {
+        CYTCollectionViewLeftAlignFlowLayout *flowLayout = CYTCollectionViewLeftAlignFlowLayout.new;
+        _&lt;#obj#&gt; = [CYTCollectionMainView collectionWithScrollDirection:UICollectionViewScrollDirectionVertical layout:flowLayout];
+        _&lt;#obj#&gt;.contentInset = UIEdgeInsetsMake(0, 0, safeAreaInsets().bottom + CYTItemMarginH, 0);
+//        _&lt;#obj#&gt;.collectionHeaderView = self.headerView;
+        @weakify(self);
+        _&lt;#obj#&gt;.scrollViewDidScroll = ^(UICollectionView *tableView) {
+            @strongify(self);
+            //code here.
+        };
+    }
+        return _&lt;#obj#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3978168D-5B23-4BDE-B559-FA2C9BA2FA56</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>collectionView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

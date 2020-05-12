@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jenAddSubViews</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    @weakify(self);
+    [self addSubViews:^NSMutableArray&lt;UIView *&gt; *(NSMutableArray&lt;UIView *&gt; *subViews) {
+        
+        @strongify(self);
+        [subViews addSubview:&lt;#obj#&gt;];
+        return subViews;
+        
+    } viewMakeConstraints:^{
+        @strongify(self);
+        [&lt;#obj#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.equalTo(CYTMarginH);
+            make.right.equalTo(-CYTMarginH);
+            make.bottom.equalTo(self.contentView);
+        }];
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8917BE28-C767-4F63-9E9C-55F02DBC67D0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>addSubViews</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

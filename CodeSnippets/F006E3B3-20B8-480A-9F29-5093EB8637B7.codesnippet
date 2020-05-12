@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //分割线
+    UILabel *lineLabel = [[UILabel alloc] init];
+    lineLabel.backgroundColor = [UIColor colorWithHexColor:@"#efefef"];
+    [self.contentView addSubview:lineLabel];
+    _lineLabel = lineLabel;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F006E3B3-20B8-480A-9F29-5093EB8637B7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>jenLine</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>分割线</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

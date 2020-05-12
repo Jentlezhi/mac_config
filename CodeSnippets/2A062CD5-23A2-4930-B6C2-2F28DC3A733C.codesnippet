@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jenCommandNetwork</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (RACCommand *)&lt;#command#&gt; {
+    
+    if (!_&lt;#command#&gt;) {
+        _&lt;#command#&gt; = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            return [RACSignal createSignal:^RACDisposable * _Nullable(id&lt;RACSubscriber&gt;  _Nonnull subscriber) {
+                [CYTLoadingView showLoadingWithType:CYTLoadingViewTypeEditNavBar];
+                [CYTNetworkManager POST:kURL.&lt;#URL#&gt; parameters:nil  dataTask:nil showErrorTost:YES completion:^(CYTNetworkResponse *responseObject) {
+                    [CYTLoadingView hideLoadingView];
+                    [CYTAlertView alertViewWithResuleEffective:responseObject.resultEffective debugConfirmConfirmAction:^{
+                        responseObject.dataDictionary = @{
+                                                          @"momentId": @"1234333",
+                                                          @"isAward":@(YES),
+                                                          @"showApply": @(YES)
+                                                          };
+                        [subscriber sendNext:responseObject];
+                        [subscriber sendCompleted];
+                        
+                    }];
+                    
+                    [subscriber sendNext:responseObject];
+                    [subscriber sendCompleted];
+                }];
+                return nil;
+            }];
+        }];
+        
+    }
+    return _&lt;#command#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2A062CD5-23A2-4930-B6C2-2F28DC3A733C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>command_network</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

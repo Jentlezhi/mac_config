@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jenBtnTitle</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)&lt;#obj#&gt; {
+    
+    if (!_&lt;#obj#&gt;) {
+        _&lt;#obj#&gt; = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_&lt;#obj#&gt; setTitle:@"Button" forState:UIControlStateNormal];
+        [_&lt;#obj#&gt; setTitleColor:CYTHexColor(@"#5C616F") forState:UIControlStateNormal];
+        _&lt;#obj#&gt;.titleLabel.font = CYTFontWithPixel(28.f);
+        @weakify(self);
+        [[_&lt;#obj#&gt; rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            @strongify(self);
+            //action here.
+        }];
+    }
+    return _&lt;#obj#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>15C21DF3-0616-4C1E-A895-050D56114C80</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>titleBtn</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

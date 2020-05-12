@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jenCombineLatest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    [[RACSignal combineLatest:@[RACObserve(&lt;#obj#&gt;, &lt;#obj#&gt;),RACObserve(&lt;#obj#&gt;, &lt;#obj#&gt;)] reduce:^id (NSNumber *&lt;#obj1#&gt;,NSNumber *&lt;#obj2#&gt;){
+        return @([&lt;#obj1#&gt; boolValue] &amp;&amp; [&lt;#obj2#&gt; boolValue];
+    }] subscribeNext:^(id  _Nullable x) {
+        @strongify(self);
+        if (![x boolValue]) {return;}
+        //code here.
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>00D2AFD2-58B5-40DE-86B8-D1D684FF63C4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>combineLatest</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

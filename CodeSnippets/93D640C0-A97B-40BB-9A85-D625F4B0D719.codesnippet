@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jenCellCustom</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self certificationPersonalInfoBasicConfig];
+        [self initCertificationPersonalInfooComponents];
+        [self makeConstrains];
+    }
+    return self;
+}
+/**
+ *  基本配置
+ */
+- (void)certificationPersonalInfoBasicConfig{
+    self.backgroundColor = [UIColor whiteColor];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+}
+/**
+ *  初始化子控件
+ */
+- (void)initCertificationPersonalInfooComponents{
+    
+}
+/**
+ *  布局控件
+ */
+- (void)makeConstrains{
+}
++ (instancetype)cellForTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath{
+    static NSString *identifier = @"CYTCertificationPersonalInfoCell";
+    customCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell){
+        cell = [[customCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    return cell;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>93D640C0-A97B-40BB-9A85-D625F4B0D719</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Cell自定义</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
